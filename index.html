@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body> 
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Web-Developer</p>
+                <h1>Hello, <br>I'm <span>Sourabh</span> Jaiswal</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------about--------------------------------------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I am Sourabh Jaiswal. I am currently pursuing Electronics Engineering in Rajkiya Engineering College Sonbhadra</p>
+                    <p>
+                        I am a dedicated <span class="highlight">web developer </span>with hands-on experience gained through internships and personal projects.
+                        My skill set encompasses designing and building dynamic web applications using modern technologies.
+                        Alongside my web development expertise, I possess a strong foundation in <span class="highlight">Data Structures and Algorithms</span>,
+                        leveraging <span class="highlight">C++</span> to create efficient solutions for coding challenges.
+                      </p>
+            <p>Member of Anchoring Committee: I have done anchoring in multiple events at college </p>
+            <p>What sets me apart is my ability to combine technical expertise with effective communication skills </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- -------------skills section ------------>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development</span><br>Full-Stack Web-Developer</li>
+                    <li><span>Languages</span><br>C++, C, Javascript</li>
+                    <li><span>Problem Solving</span><br>DSA in C++</li>
+                    <li><span>Developer Tools</span><br>HTML,CSS and Javascript</li>
+                    <li><span>Frameworks</span><br> React, Node.js, Express.js, Bootstrap</li>
+                    <li><span>Databases</span><br>MySQL,MongoDB</li>
+                    <li><span>Soft Skills</span><br>Team-Work,Public Speaking,Presentation skills,Leadership skills,management skills</li>
+                    <li><span>Sports</span><br>Badminton</li>
+
+                </ul>
+            </div>
+            <!-- experience section -->
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>october 2023 to current </span><br>Web Development Intern at TechiEco Pvt Ltd</li>
+
+                    <li><span>1st September,2023 to 1st October,2023</span><br>Web Development Intern at CodeClause Pvt Ltd</li>
+                    <li><span>20 July,2023 to 20 August,2023</span> <br>Internship at CodSoft in C++ </li>
+                    <li><span>1st July,2023 to 1st August,2023</span><br>Web Development Intern at at OctaNet Software Service </li>
+                    
+                </ul>
+            </div>
+            <!-- education section -->
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Graduation</span><br>Rajkiya Engineering College Sonbhadra <br>2024</li>
+                    <li><span>Intermediate</span><br>S.P.B.I.C.P.C Ghughli Maharajganj <br>2020</li>
+                    <li><span>High School</span><br>P.N National Public School, Gorakhpur <br>2018</li>
+                    
+                </ul>
+            </div>
+
+            <!-- end -->
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Projects section -->
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-1.png">
+                    <!-- pehla work -->
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-2.jpg">
+                 <!-- dosra work -->
+                   <div class="layer">
+                    <h3>Crypto Currency Tracker</h3>
+                    <p>A real-time cryptocurrency tracker app, enabling users to monitor prices, trends, and receive 
+alerts for market shifts.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+                
+                </div>
+                <div class="work">
+                    <img src="/images/work-3.png">
+                                     <!-- tisra work -->
+                                     <div class="layer">
+                                        <h3>Online Shopping App</h3>
+                                        <p>Created user-friendly online shopping app for seamless browsing, 
+    selection,and secure checkout.</p>
+                                            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                                    </div>
+                </div>
+            </div>
+
+<!-- -----------------------------see more section----------------------------------------------- -->
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+
+<!-- -----------------------------Contact Form------------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> sourabhjaiswal07102002@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91 7068092907</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sourabh-jaiswal-6200b5229"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Sourabhjaiswal12016"><i class="fa-brands fa-square-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+<!-- ----------------------------downloadable resume----------------------------------------------------- -->
+           <a href="./resume4.0.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+
+            <!-- -----------Contact Form-right side -->
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+ <!-- ---------------to reset the form------------------------------ -->
+ <span id="msg"></span>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------============-:copyright section is not needed:------------------------------------ -->
+
+
+
+</div>
+
+
+<!-- script .js section here only -->
+<script>
+    //class name se data fetch krte time par "." operator ka use nahi karte hai: sirf querySelector ka use karke fetch karte time par hi "." ya fir "#" ka use karte hai:-//
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+// onclick event par open tab function jo call ho rha hai usi ko define kar rhe:
+function opentab(tabname){
+    for(tablink of tablinks)
+    {
+    tablink.classList.remove("active-link");
+    }
+
+     for(tabcontent of tabcontents)
+    {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+
+}
+
+</script>
+<!-- ---------------onclick event for responsiveness:---------------------------- -->
+<script>
+var sidemenu=document.getElementById("sidemenu");
+
+function openmenu()
+    {
+    sidemenu.style.right="0";
+    }
+    function closemenu()
+    {
+    sidemenu.style.right="-200px";
+    }
+
+
+
+
+
+
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRiO9x1A7yU7LM_deV1wwPTn7xPmAhw_bNtuWOuUV1iynfSf2ZWBBvgRiQfMr8DiHo/exec'
+    const form = document.forms['submit-to-google-sheet']
+     
+    const msg=document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully !"
+            setTimeout(function(){
+                msg.innerHTML="";
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
